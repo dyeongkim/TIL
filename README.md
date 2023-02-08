@@ -4,7 +4,7 @@ Today I Learned
 <br>
 
 # 자료구조
-- 연결리스트(Linked List)
+- [연결리스트(Linked List)](./DataStructure/LinkedList/LinkedList.md)
 - 스택(Stack)
 - 큐(Queue)
 - 트리(Tree)
