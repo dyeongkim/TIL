@@ -1,24 +1,27 @@
-# 연결 리스트 구현
+# 이중 연결 리스트 구현
 # 노드 정의
 class Node:
-    def __init__(self, data, next=None):
+    def __init__(self, data, prev = None, next=None):
+        self.prev = prev
         self.data = data
         self.next = next
 
-# 연결 리스트
-class LinkedList:
-    def __init__(self, data):
-        self.head = Node(data)
+# 이중 연결 리스트
+class DoubleLinkedList:
+    def __init__(self):
+        self.head = Node(None)
+        self.tail = Node(self.head)
 
     #맨 뒤에 새로운 노드 추가하기
-    def add(self, data) :
-        node = self.head
-        # 마지막 노드까지 검색
-        while node.next is not None :
-            node = node.next
-        
-        #마지막 노드 next에 새로운 노드 추가
-        node.next = Node(data)
+    def append(self, data) :
+        if self.head is None :
+            self.head = Node(data)
+            self.tail = self.head
+        else :
+            node = self.tail
+            new_node = Node(data, prev=node)
+            node.next = new_node
+            self.tail = new_node
 
     #노드 검색 O(n)
     def get(self, index) :

@@ -30,7 +30,7 @@ class Node:
         self.data = data
         self.next = next
 
-# 단일 연결 리스트 구현
+# 연결 리스트 구현
 class LinkedList:
     def __init__(self, data):
         self.head = Node(data)
