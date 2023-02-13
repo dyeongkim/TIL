@@ -7,7 +7,7 @@ Today I Learned
 - [연결리스트(Linked List)](./DataStructure/LinkedList/LinkedList.md)
 - [스택(Stack)](./DataStructure/Stack/Stack.md)
 - [큐(Queue)](./DataStructure/Queue/Queue.md)
-- 트리(Tree)
+- [트리(Tree)](./DataStructure/Tree/Tree.md)
 - 정렬(Sorting)
 - 탐색(Search)
 - 그래프(Graph)
