@@ -28,6 +28,7 @@
     - 모든 말단 노드가 동일한 깊이, 레벨을 갖는다.
     - 트리의 노드의 개수가 2^h(높이)-1 개 이다.
 - 삼진트리(Ternary Tree)
+    - 
 - B-트리
 - AVL 트리
 - 트라이 트리(Trie Tree)
@@ -70,4 +71,74 @@ class BinaryTree():
                 cur_node.right = new_node
             else :
                 self._add_node_helper(cur_node.right, new_node)
+```
+
+
+
+## 삼진트리 구현(Python)
+
+```Python
+# 삼진트리 구현
+class Node():
+    def __init__(self,value):
+        self.value = value
+        self.left = None
+        self.mid = None
+        self.right = None
+
+class TernaryTree():
+    def __init__(self):
+        self.root = None
+
+    def add_node(self, value):
+        self.root = self.add_node_recursion(self.root, value)
+
+    def add_node_recursion(self, node, value):
+        if node is None:
+            node = Node(value)
+        elif value < node.value:
+            node.left = self.add_node_recursion(node.left, value)
+        elif value == node.value:
+            node.mid = self.add_node_recursion(node.mid, value)
+        else :
+            node.right = self.add_node_recursion(node.right, value)
+        return node
+    
+    def search(self, value):
+        return self.search_recursion(self.root, value)
+    
+    def search_recursion(self, node, value):
+        if node is None:
+            return False
+        elif value < node.value:
+            return self.search_recursion(node.left, value)
+        elif value == node.value:
+            return True
+        else :
+            return self.search_recursion(node.right, value)
+
+    def print_tree(self):
+        if self.root is not None:
+            self.print_tree_recursion(self.root)
+
+    def print_tree_recursion(self, node):
+        if node:
+            self.print_tree_recursion(node.left)
+            print(node.value, end=' ')
+            self.print_tree_recursion(node.mid)
+            self.print_tree_recursion(node.right)
+
+tree = TernaryTree()
+
+tree.add_node(5)
+tree.add_node(4)
+tree.add_node(9)
+tree.add_node(7)
+tree.add_node(2)
+tree.add_node(3)
+
+print(tree.search(7)) 
+print(tree.search(10))
+
+tree.print_tree()
 ```

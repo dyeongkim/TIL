@@ -10,7 +10,7 @@ class TernaryTree():
     def __init__(self):
         self.root = None
 
-    def add_node(self, node, value):
+    def add_node(self, value):
         self.root = self.add_node_recursion(self.root, value)
 
     def add_node_recursion(self, node, value):
@@ -36,3 +36,28 @@ class TernaryTree():
             return True
         else :
             return self.search_recursion(node.right, value)
+
+    def print_tree(self):
+        if self.root is not None:
+            self.print_tree_recursion(self.root)
+
+    def print_tree_recursion(self, node):
+        if node:
+            self.print_tree_recursion(node.left)
+            print(node.value, end=' ')
+            self.print_tree_recursion(node.mid)
+            self.print_tree_recursion(node.right)
+
+tree = TernaryTree()
+
+tree.add_node(5)
+tree.add_node(4)
+tree.add_node(9)
+tree.add_node(7)
+tree.add_node(2)
+tree.add_node(3)
+
+print(tree.search(7)) 
+print(tree.search(10))
+
+tree.print_tree()
