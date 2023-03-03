@@ -1,4 +1,4 @@
-#백준 1926 - 그림
+# 백준 2178 - 미로탐색
 from collections import deque
 
 n, m = map(int,input().split())
@@ -6,7 +6,7 @@ graph = []
 
 # graph에 [y][x] 순서로 남음
 for i in range(n):
-    graph.append(list(map(int,input().split())))
+    graph.append(list(input()))
 
 # 방문한 칸 상 우 하 좌 좌표용 리스트
 dx = [1,0,-1,0]
