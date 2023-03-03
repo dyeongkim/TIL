@@ -74,6 +74,10 @@ graph.bfs(0)
 ## BFS 연습문제
 - 기본
     - [백준 1926 - 그림](https://www.acmicpc.net/problem/1926)
-        - [풀이](Algorithm/Graph/BFS/boj_1926.py)
+        - [풀이](/Algorithm/Graph/BFS/boj_1926.py)
     - [백준 2178 - 미로탐색](https://www.acmicpc.net/problem/2178)
+        - [풀이](/Algorithm/Graph/BFS/boj_2178.py)
+    - [백준 7576 - 토마토](https://www.acmicpc.net/problem/7576)
+    - [백준 4179 - 불!](https://www.acmicpc.net/problem/4179)
+    - [백준 1697 - 숨바꼭질 ](https://www.acmicpc.net/problem/1697)
 - 심화
