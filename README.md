@@ -19,7 +19,7 @@ Today I Learned
 - 검색(Search)
 - 그래프(Graph)
     - [BFS](./Algorithm/Graph/BFS/BFS.md)
-    - DFS
+    - [DFS](./Algorithm/Graph/DFS/DFS.md)
 - 동적 계획법(Dynamic programming)
 - 백트래킹(Backtracking)
 - 문자열(String)
