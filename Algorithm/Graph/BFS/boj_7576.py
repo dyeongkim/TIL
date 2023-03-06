@@ -1,4 +1,4 @@
-# 백준 2178 - 미로탐색
+# 백준 7576 - 토마토
 from collections import deque
 
 #m 가로칸 n 세로칸
