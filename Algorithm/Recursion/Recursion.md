@@ -45,4 +45,6 @@ print('for result :', res)
         - [풀이](/Algorithm/Recursion/boj_1914.py)
     - [백준 1629 - 곱셈](https://www.acmicpc.net/problem/1629)
         - [풀이](/Algorithm/Recursion/boj_1629.py)
+    - [백준 1074 - Z](https://www.acmicpc.net/problem/1074)
+        - [풀이](/Algorithm/Recursion/boj_1074.py)
 - 심화
