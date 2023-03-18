@@ -22,6 +22,6 @@ Today I Learned
     - [BFS](./Algorithm/Graph/BFS/BFS.md)
     - [DFS](./Algorithm/Graph/DFS/DFS.md)
 - 동적 계획법(Dynamic programming)
-- 백트래킹(Backtracking)
+- [백트래킹(Backtracking)](./Algorithm/Backtracking/Backtracking.md)
 - 문자열(String)
 - 탐욕 알고리즘(Greedy)
