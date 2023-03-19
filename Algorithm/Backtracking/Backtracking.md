@@ -23,6 +23,8 @@
 - 기본
     - [백준 15649 - N과 M](https://www.acmicpc.net/problem/15649)
         - [풀이](/Algorithm/Backtracking/boj_15649.py)
-    - [백준 9663 - N과 M](https://www.acmicpc.net/problem/9663)
+    - [백준 1182 -부분수열의 합](https://www.acmicpc.net/problem/1182)
+        - [풀이](/Algorithm/Backtracking/boj_1182.py)
+    - [백준 9663 - N-Queen](https://www.acmicpc.net/problem/9663)
         - [풀이](/Algorithm/Backtracking/boj_9663.py)
 - 심화
