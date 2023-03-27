@@ -24,4 +24,4 @@ Today I Learned
 - 동적 계획법(Dynamic programming)
 - [백트래킹(Backtracking)](./Algorithm/Backtracking/Backtracking.md)
 - 문자열(String)
-- 탐욕 알고리즘(Greedy)
+- [탐욕 알고리즘(Greedy)](./Algorithm/Greedy/Greedy.md)
