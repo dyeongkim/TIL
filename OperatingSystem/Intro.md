@@ -18,5 +18,18 @@
     - 페이지 교체 알고리즘을 통해 메모리 내의 데이터를 관리
 
 - 파일 시스템 관리
+    - 파일을 저장하고 검색, 수정, 삭제할 수 있는 시스템 제공
+
 - 입출력 관리
+    - 인터럽트 기반 입출력 장치와 직접 메모리 접근(DMA) 등의 기법을 사용
+
 - 사용자 인터페이스 제공
+    - 명령어 인터페이스(Command Line Interface, CLI)
+    - 그래픽 사용자 인터페이스(Graphical User Interface, GUI)
+
+### 1.2 운영체제의 종류
+- Windows
+- MacOS
+- Linux
+- Android
+- IOS
