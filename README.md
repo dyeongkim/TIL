@@ -32,7 +32,7 @@ Today I Learned
 - [소개](./OperatingSystem/Intro.md)
     - 운영체제의 정의 및 역할
     - 운영체제 종류
-- 프로세스 관리
+- [프로세스 관리](./OperatingSystem/process.md)
     - 프로세스의 개념 및 상태
     - 프로세스 스케줄링 알고리즘
     - 프로세스 동기화 
