@@ -27,6 +27,12 @@
     - 명령어 인터페이스(Command Line Interface, CLI)
     - 그래픽 사용자 인터페이스(Graphical User Interface, GUI)
 
+<br>
+
+---
+
+<br>
+
 ### 1.2 운영체제의 종류
 - Windows
 - MacOS
