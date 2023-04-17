@@ -32,7 +32,7 @@ Today I Learned
 - [소개](./OperatingSystem/Intro.md)
 - [프로세스 관리](./OperatingSystem/process.md)
 - [메모리 관리](./OperatingSystem/memory.md)
-- 파일 시스템
+- [파일 시스템](./OperatingSystem/fileSystem.md)
 - 입출력 관리
 
 <br>
