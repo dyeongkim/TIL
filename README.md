@@ -33,7 +33,8 @@ Today I Learned
 - [프로세스 관리](./OperatingSystem/process.md)
 - [메모리 관리](./OperatingSystem/memory.md)
 - [파일 시스템](./OperatingSystem/fileSystem.md)
-- 입출력 관리
+- [입출력 관리](./OperatingSystem/IOmanagement.md)
+- [동시성과 동기화](./OperatingSystem/synchronization.md)
 
 <br>
 
