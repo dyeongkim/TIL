@@ -17,7 +17,7 @@ Today I Learned
 # 알고리즘/Algorithm
 - 정렬(Sorting)
 - 검색(Search)
-- [재귀(recursion)](./Algorithm/recursion/recursion.md)
+- [재귀(recursion)](./Algorithm/Recursion/Recursion.md)
 - 그래프(Graph)
     - [BFS](./Algorithm/Graph/BFS/BFS.md)
     - [DFS](./Algorithm/Graph/DFS/DFS.md)
