@@ -22,6 +22,12 @@ def insert_sort(arr):
                 
 
 # 버블 정렬
+def bubble_sort(arr):
+    for i in range(len(arr)-1, 0, -1):
+        print("array is:", arr)
+        for j in range(i):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
 
 # 병합 정렬
 def merge_sort(arr):
@@ -37,5 +43,5 @@ def merge_sort(arr):
 
 # 테스트 코드
 arr = [64, 34, 25, 12, 22, 11, 90]
-insert_sort(arr)
+bubble_sort(arr)
 print("Sorted array is:", arr)
