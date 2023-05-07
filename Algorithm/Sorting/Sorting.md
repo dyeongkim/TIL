@@ -23,7 +23,25 @@ def selectSort(arr):
         arr[i], arr[min_idx] = arr[min_idx], arr[i]
 ```
 
-- 삽입 정렬(Insertion Sort)
+### 삽입 정렬(Insertion Sort)
+
+![삽입정렬](https://user-images.githubusercontent.com/113990279/236684828-8f11e709-870a-44ef-b2a9-b0a4e946b454.gif)
+
+1. 데이터를 하나씩 확인한다.
+2. 배열에서 자신보다 작은 숫자를 찾는 순간 그 뒤에 삽입
+
+```Python
+# 삽입정렬 예시
+def insert_sort(arr):
+    for i in range(1, len(arr)):
+        print("array is:", arr)
+        for j in range(i, 0, -1):
+            if arr[j] < arr[j-1]:
+                arr[j], arr[j-1] = arr[j-1], arr[j]
+            else :
+                break
+```
+
 - 버블 정렬(Bubble Sort)
 
 ## 시간복잡도 O(NlogN) 정렬
