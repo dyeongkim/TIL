@@ -69,14 +69,47 @@ def bubble_sort(arr):
 
 ## 시간복잡도 O(NlogN) 정렬
 
-### 벙합 정렬(Merge Sort)
+### 병합 정렬(Merge Sort)
 
 ![병합정렬](https://github.com/dyeongkim/TIL/assets/113990279/8eb6d016-9062-431d-b2d2-8636677d4247)
 
 (https://commons.wikimedia.org/wiki/File:Merge-sort-example-300px.gif)
 
+1. 정렬되지 않은 목록을 더이상 나눌 수 없을때 까지 반복해서 반으로 나눈다.
+2. 나누어진 단일 요소들을 정렬하면서 결합한다.
+3. 모든 목록을 결합할때까지 반복.
+
 ```Python
 # 병합정렬 예시
+def merge_sort(arr):
+    if len(arr) > 1:
+        mid = len(arr) //2
+        left = arr[:mid]
+        right = arr[mid:]
+
+        merge_sort(left)
+        merge_sort(right)
+
+        i = j = k = 0
+
+        while i < len(left) and j < len(right):
+            if left[i] < right[j] :
+                arr[k] = left[i]
+                i += 1
+            else :
+                arr[k] = right[j]
+                j += 1
+            k += 1
+
+        while i < len(left) :
+            arr[k] = left[i]
+            i += 1
+            k += 1
+
+        while j < len(right) :
+            arr[k] = right[j]
+            j += 1
+            k += 1
 ```
 
 ## 정렬 연습문제
