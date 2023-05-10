@@ -71,6 +71,10 @@ def bubble_sort(arr):
 
 ### 벙합 정렬(Merge Sort)
 
+![병합정렬](https://github.com/dyeongkim/TIL/assets/113990279/8eb6d016-9062-431d-b2d2-8636677d4247)
+
+(https://commons.wikimedia.org/wiki/File:Merge-sort-example-300px.gif)
+
 ```Python
 # 병합정렬 예시
 ```
