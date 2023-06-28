@@ -112,6 +112,40 @@ def merge_sort(arr):
             k += 1
 ```
 
+### 퀵 정렬(Quick Sort)
+
+![퀵정](https://github.com/dyeongkim/TIL/assets/113990279/0433aa67-20ec-4de6-9c2c-6e318f679d29)
+
+(https://commons.wikimedia.org/wiki/File:Quicksort-example.gif)
+
+1. 배열의 요소를 '피벗'으로 선택(ex: 배열의 가장 마지막 요소)
+2. 피벗을 기준으로 작으면 피벗 앞, 크면 피벗 뒤로 요소를 정렬(파티셔닝)
+3. 이후 피벗을 기준으로 나눠진 하위 배열에 재귀적으로 적용
+
+```Python
+# 퀵정렬 예시
+def partition(arr, st, en):
+    i = st - 1
+    pivot = arr[en]
+
+    for j in range(st, en):
+        if arr[j] <= pivot:
+            i = i + 1
+            arr[i], arr[j] = arr[j], arr[i]
+    
+    arr[i + 1], arr[en] = arr[en], arr[i + 1]
+    return i + 1
+
+def quick_sort(arr, st, en):
+    if len(arr) == 1:
+        return arr
+    if st < en:
+        pi = partition(arr, st, en)
+        quick_sort(arr, st, pi - 1)
+        quick_sort(arr, pi + 1, en)
+```
+
+
 ## 정렬 연습문제
 - 기본
     - [백준 11728 - 배열합치기](https://www.acmicpc.net/problem/11728)

@@ -60,7 +60,28 @@ def merge_sort(arr):
             j += 1
             k += 1
 
+# 퀵 정렬
+def partition(arr, st, en):
+    i = st - 1
+    pivot = arr[en]
+
+    for j in range(st, en):
+        if arr[j] <= pivot:
+            i = i + 1
+            arr[i], arr[j] = arr[j], arr[i]
+    
+    arr[i + 1], arr[en] = arr[en], arr[i + 1]
+    return i + 1
+
+def quick_sort(arr, st, en):
+    if len(arr) == 1:
+        return arr
+    if st < en:
+        pi = partition(arr, st, en)
+        quick_sort(arr, st, pi - 1)
+        quick_sort(arr, pi + 1, en)
+
 # 테스트 코드
 arr = [64, 34, 25, 12, 22, 11, 90]
-merge_sort(arr)
+quick_sort(arr,0, len(arr)-1)
 print("Sorted array is:", arr)
