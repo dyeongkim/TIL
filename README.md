@@ -8,7 +8,8 @@ Today I Learned
 - [스택(Stack)](./DataStructure/Stack/Stack.md)
 - [큐(Queue)](./DataStructure/Queue/Queue.md)
 - [트리(Tree)](./DataStructure/Tree/Tree.md)
-- 그래프(Graph)
+- [그래프(Graph)](./DataStructure/Graph/Graph.md)
+- [힙(Heap)](./DataStructure/Heap/Heap.md)
 
 <br>
 
