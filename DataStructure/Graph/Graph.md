@@ -43,4 +43,21 @@ class Undirected_Graph:
         for node in self.graph:
             for neighbour in self.graph[node]:
                 print("Undirected_Graph Edge : node = ",node," Neighbour = ",neighbour)
+
+# 방향 그래프
+class Directed_Graph:
+    def __init__(self):
+        self.graph = {}
+        
+    # 노드 사이 간선(Egde) 연결
+    def add_edge(self, u, v) :
+        if u not in self.graph:
+            self.graph[u] = [v]
+        else:
+            self.graph[u].append(v)
+    
+    def show_edges(self):
+        for node in self.graph:
+            for neighbour in self.graph[node]:
+                print("Directed_Graph Edge : node = ",node," Neighbour = ",neighbour)
 ```
